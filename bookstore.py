@@ -18,6 +18,9 @@ class Book:
         self.bookstore = BookStore()
 
 
+    """ This method checks whether the book exists or not, using the id attribute.
+    If the id matches the book, this method sends it to the update function. If not, it sends the book to be added to the database
+    """
     def save(self):
         if self.id:
             self.bookstore._update_book(self)
