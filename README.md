@@ -1,7 +1,6 @@
 ## Book Reading List
 
-Basic python book reading list application. For practicing teamwork and GitHub collaboration. 
+This menu-based program allows users to add, view, update, and delete books from a list which is stored in a Sqlite3 database.
 
-Uses SQLite3 database to store data. 
-
-Requires Python 3.7.
+Updated by @haselfine and @7ibakana. 
+Forked from @claraj.
