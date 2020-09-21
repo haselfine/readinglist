@@ -73,7 +73,7 @@ def delete_book():
         book = store.get_book_by_id(book_id)
         answer = ui.ask_question("Type delete to confirm book deletion: ")
         if answer == "delete":
-            book.delete(book)
+            book.delete()
         else:
             ui.message("No changes made")
     except:
