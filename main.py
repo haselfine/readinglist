@@ -62,11 +62,15 @@ def search_book():
 
 def change_read():
 
-    book_id = ui.get_book_id()
-    book = store.get_book_by_id(book_id)  
-    new_read = ui.get_read_value()     
-    book.read = new_read 
-    book.save()
+    try:
+        book_id = ui.get_book_id()
+        book = store.get_book_by_id(book_id)  
+        new_read = ui.get_read_value()     
+        book.read = new_read 
+        book.save()
+    except:
+        ui.message('Unable to locate a book with the ID entered.')
+
     
 
 def quit_program():
