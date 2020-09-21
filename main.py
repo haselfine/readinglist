@@ -67,7 +67,8 @@ def change_read():
         book = store.get_book_by_id(book_id)  
         new_read = ui.get_read_value()     
         book.read = new_read 
-        book.save()
+        book.save()    
+        ui.message('Book reading status changed')
     except:
         ui.message('Unable to locate a book with the ID entered.')
 
@@ -82,7 +83,6 @@ def delete_book():
             ui.message("No changes made")
     except:
         print('Error, No books deleted')
-
 
 def quit_program():
     ui.message('Thanks and bye!')
